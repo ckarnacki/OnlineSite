@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" http-equiv="Cache-control" content="NO-CACHE">
-  <title>Parts Unlimited.com Checkout</title>
+  <title>GAP.com Checkout</title>
 
   <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -25,8 +25,8 @@
 
 <body>
   <br/>  <br/>
-  <img height="85" width="225" src="images/parts-unlimited-logo.jpg">
-  <h1>Parts Unlimited Checkout</h1>
+  <img height="85" width="225" src="images/gap_header.jpg">
+  <h1>GAP Checkout</h1>
 
   Name: <input type="text" name="customerName" id="customer-name" value="Enter your name here...">
 
@@ -46,17 +46,15 @@
 
   <div class="product">
     <div class="product-image">
-      <img src="https://images.lteplatform.com/images/products/600x600/431441870.jpg">
+      <img src="https://bananarepublic.gap.com/webcontent/0017/654/630/cn17654630.jpg">
     </div>
     <div class="product-details">
-      <div class="product-title">Fuel Injector</div>
+      <div class="product-title">Slim Wool-Blend Knit Blazer</div>
       <p class="product-description">
-          Fuel Mixture Formation - Direct Injection<br/>
-          Fuel Type - Petrol<br/>
-          Engine Code - CAWB<br/>
-          Date From - 03/2008<br/>
-          Date To - 11/2008<br/>
-          Fitted Quantity 1<br/>
+          Category - Outerwear<br/>
+          Size - Large<br/>
+          Color - Grey<br/>
+          Quantity - 1<br/>
       </p>
     </div>
     <div class="product-price">224.99</div>
@@ -68,49 +66,26 @@
         Remove
       </button>
     </div>
-    <div class="product-line-price">224.99</div>
+    <div class="product-line-price">298.00</div>
   </div>
 
-  <div class="product">
-    <div class="product-image">
-      <img src="http://asset.lemansnet.com/media/edge/6/F/F/6FF0CA34-9CFA-4B5D-AF35-9675963AEF1C.png?x=260&y=260&b=FFFFFF&t=image/jpeg">
-    </div>
-    <div class="product-details">
-      <div class="product-title">fuel injector cleaner kits</div>
-      <p class="product-description">
-          Clean most fuel injectors with ease<br/>
-          Fit most OEM Nippon Denso or HYB fuel injectors respectively<br/>
-          Flush and back flush injectors for best possible cleaning<br/>
-        </p>
-    </div>
-    <div class="product-price">129.00</div>
-    <div class="product-quantity">
-      <input type="number" value="1" min="1">
-    </div>
-    <div class="product-removal">
-      <button class="remove-product">
-        Remove
-      </button>
-    </div>
-    <div class="product-line-price">129.00</div>
-  </div>
-
+  
   <div class="totals">
     <div class="totals-item">
       <label>Subtotal</label>
-      <div class="totals-value" id="cart-subtotal">1729.00</div>
+      <div class="totals-value" id="cart-subtotal">298.00</div>
     </div>
     <div class="totals-item">
-      <label>VAT (5%)</label>
-      <div class="totals-value" id="cart-tax">86.45</div>
+      <label>Tax (8.25%)</label>
+      <div class="totals-value" id="cart-tax">24.59</div>
     </div>
     <div class="totals-item">
       <label>Shipping</label>
-      <div class="totals-value" id="cart-shipping">15.00</div>
+      <div class="totals-value" id="cart-shipping">5.00</div>
     </div>
     <div class="totals-item totals-item-total">
       <label>Grand Total</label>
-      <div class="totals-value" id="cart-total">1830.45</div>
+      <div class="totals-value" id="cart-total">327.59</div>
     </div>
   </div>
 
@@ -168,7 +143,7 @@
     setTimeout(updateResponsePanel, 4000);
 
     var serviceKey = getParameterByName('service_key');
-    if (!serviceKey) serviceKey = "51d701331bd846818482aecca71b24a2";
+    if (!serviceKey) serviceKey = "b931a3ed5aed45ee9d2bb469b5226e0b";
 
     var node = document.getElementById('cart-total'),
     orderValue = node.innerHTML
